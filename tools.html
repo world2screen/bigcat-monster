@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>userchecker</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        .fish {
+            transform:scale(0.1,0.1);
+            position: fixed;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            padding-bottom: 50px;
+        }
+        @keyframes spin1 { 0.01% { transform:scale(8, 8); } }
+    </style>
+    <script>
+        function goto(web) {
+            window.location.replace(web)
+        }
+        function fishJumpscare() {
+            document.getElementById('hola').style.animation = "spin1 999s linear infinite"
+            document.getElementById('hola').removeAttribute("hidden")
+        }
+    </script>
+    <body class="main"> 
+        <div class="bg"></div>
+        <div class="fish">
+            <img id="hola" hidden src='images/albania-albanian.gif'><br>
+        </div>
+        
+        
+
+        <div class='center glow tex2'>
+            <!-- <b> //============\\ </b> <br><br> -->
+            
+            <a onclick="goto('/user.html')">userchecker</a><br>
+            <a onclick="fishJumpscare()">fish</a><br>
+
+            <!-- <br><br> <b> \\============// </b> -->
+        </div>
+
+        <div class='top'>
+            <b>| <a onclick="goto('/index.html')">main</a> | <a onclick="goto('/blog.html')">blog</a> | <a onclick="goto('/tools.html')">tools</a> |</b>
+        </div>
+    </body>
+</html>

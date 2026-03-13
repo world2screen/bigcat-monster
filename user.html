@@ -95,11 +95,8 @@
                 }
             }
         }
-        function gotoMain() {
-            window.location.replace('/index.html')
-        }
-        function gotoBlog() {
-            window.location.replace('/blog.html')
+        function goto(web) {
+            window.location.replace(web)
         }
     </script>
     <body class="main"> 
@@ -115,7 +112,7 @@
         </div>
 
         <div class='top'>
-            <b>| <a onclick="gotoMain()">main</a> | <a onclick="gotoBlog()">blog</a> |</b>
+            <b>| <a onclick="goto('/index.html')">main</a> | <a onclick="goto('/blog.html')">blog</a> | <a onclick="goto('/tools.html')">tools</a> |</b>
         </div>
     </body>
 </html>
