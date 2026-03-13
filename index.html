@@ -22,7 +22,7 @@
             const elm = document.getElementById('wow');
             var newone = elm.cloneNode(true);
             elm.parentNode.replaceChild(newone, elm);
-            document.getElementById('wow').style.animation = "spin1 ease-out 0.5s"
+            document.getElementById('wow').style.animation = "spin1 ease-out 0.3s"
         }
         function play(audio, loop, volume) {
             var audiov = new Audio(audio);
@@ -32,9 +32,6 @@
         }
         function copy(text) {
             navigator.clipboard.writeText(text);
-        }
-        function goto(web) {
-            window.location.replace(web)
         }
     </script>
     <style>
@@ -53,7 +50,7 @@
         </div>
 
         <div class='top'>
-            <b>| <a onclick="goto('/index.html')">main</a> | <a onclick="goto('/blog.html')">blog</a> | <a onclick="goto('/tools.html')">tools</a> |</b>
+            <b>| <a href="/index.html">main</a> | <a href="/blog.html">blog</a> | <a href="/tools.html">tools</a> |</b>
         </div>
     </body>
 </html>

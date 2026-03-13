@@ -20,9 +20,6 @@
         @keyframes spin1 { 0.01% { transform:scale(8, 8) } }
     </style>
     <script>
-        function goto(web) {
-            window.location.replace(web)
-        }
         function fishJumpscare() {
             document.getElementById('hola').style.animation = "spin1 999s linear infinite"
             document.getElementById('hola').removeAttribute("hidden")
@@ -42,14 +39,14 @@
         <div class='center glow tex2'>
             <!-- <b> //============\\ </b> <br><br> -->
             
-            <a onclick="goto('/user.html')">userchecker</a><br>
+            <a href="/user.html">userchecker</a><br>
             <a onclick="fishJumpscare()">fish jumpscare</a><br>
 
             <!-- <br><br> <b> \\============// </b> -->
         </div>
 
         <div class='top'>
-            <b>| <a onclick="goto('/index.html')">main</a> | <a onclick="goto('/blog.html')">blog</a> | <a onclick="goto('/tools.html')">tools</a> |</b>
+            <b>| <a href="/index.html">main</a> | <a href="/blog.html">blog</a> | <a href="/tools.html">tools</a> |</b>
         </div>
     </body>
 </html>
