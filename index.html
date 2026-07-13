@@ -1,8 +1,37 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <h1>admin@bigcat.monster</h1>
-    dc: blablablablalhaha
-    
-    
-  </body>
+	<script>
+		function thing() {
+			let cats2load = 44
+			let currentcatindex = 1
+			let catgiffolder = "https://github.com/world2screen/bigcat-monster/blob/main/bigcatgifs/"
+			let ele = document.getElementById("cats")
+			document.body.appendChild(ele)
+			
+			for (let i=1; i <= currentcatindex; i++) {
+				console.log(i)
+				let img = document.createElement('img')
+				ele.appendChild(img)
+				img.className ="grid";
+				img.src = catgiffolder + "cat%20(" + i + ").gif?raw=true"
+				
+			}
+		}
+	</script>
+	<style>
+		.grid{
+			border:1px solid #ddd;
+			float:left;
+			width:175px;
+			height:175px;
+		}
+	</style>
+	<body>
+		<h1>admin@bigcat.monster</h1>
+		dc: blablablablalhaha
+		
+		<button onclick=thing()>load 50 cats</button>
+		
+		<div class="center" id="cats"></div><br>
+	</body>
 </html>
