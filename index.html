@@ -2,13 +2,13 @@
 <html>
 	<script>
 		function thing() {
-			let cats2load = 44
+			let cats2load = 91
 			let currentcatindex = 1
 			let catgiffolder = "https://github.com/world2screen/bigcat-monster/blob/main/bigcatgifs/"
 			let ele = document.getElementById("cats")
 			document.body.appendChild(ele)
 			
-			for (let i=1; i <= currentcatindex; i++) {
+			for (let i=1; i <= cats2load; i++) {
 				console.log(i)
 				let img = document.createElement('img')
 				ele.appendChild(img)
@@ -30,7 +30,7 @@
 		<h1>admin@bigcat.monster</h1>
 		dc: blablablablalhaha
 		
-		<button onclick=thing()>load 50 cats</button>
+		<button onclick=thing()>load cats</button>
 		
 		<div class="center" id="cats"></div><br>
 	</body>
