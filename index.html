@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<script>
+		let catgiffolder = "https://github.com/world2screen/bigcat-monster/blob/main/bigcatgifs/"
+		let catindex = 1;
+		let cats2load = 81
+		
+		
 		function thing() {
-			let cats2load = 81
-			let catgiffolder = "https://github.com/world2screen/bigcat-monster/blob/main/bigcatgifs/"
-			let ele = document.getElementById("cats")
-			document.body.appendChild(ele)
+			console.log(catindex)
 			
-			for (let i=1; i <= cats2load; i++) {
+			for (let i=catindex; i <= cats2load && i < 50+catindex; i++) {
 				console.log(i)
+				
+				let ele = document.getElementById("cats")
+				
 				let img = document.createElement('img')
-				ele.appendChild(img)
 				img.className ="grid";
 				img.src = catgiffolder + "cat%20(" + i + ").gif?raw=true"
 				
+				ele.appendChild(img)
 			}
+			if (catindex+50 <= cats2load) { catindex = catindex + 50 }
 		}
 	</script>
 	<style>
@@ -29,8 +35,8 @@
 		<h1>admin@bigcat.monster</h1>
 		dc: blablablablalhaha
 		
-		<button onclick=thing()>load cats</button>
+		<button onclick=thing()>load 50 or so cats (you can click it multiple times)</button>
 		
-		<div class="center" id="cats"></div><br>
+		<div id="cats"></div><br>
 	</body>
 </html>
