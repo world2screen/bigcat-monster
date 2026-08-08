@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<script>
-		let catgiffolder = "https://github.com/world2screen/bigcat-monster/blob/main/bigcatgifs/"
+		let catgiffolder = "https://raw.githubusercontent.com/world2screen/bigcat-monster/refs/heads/main/bigcatgifs/"
 		let catindex = 1
 		let cats2load = 143
 		
@@ -16,7 +16,7 @@
 				
 				let img = document.createElement('img')
 				img.className ="grid";
-				img.src = catgiffolder + "cat%20(" + i + ").gif?raw=true"
+				img.src = catgiffolder + "cat%20(" + i + ").gif"
 				
 				ele.appendChild(img)
 			}
@@ -39,6 +39,6 @@
 		<button onclick=thing()>load 50 cats</button>
 		<a href="https://downgit.github.io/#/home?url=https://github.com/world2screen/bigcat-monster/tree/main/bigcatgifs">download all cats</a>
 		
-		<div id="cats"></div><br>
+		<div id="cats"></div>
 	</body>
 </html>
